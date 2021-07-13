@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script lang="text/javascript" src="scripts/scripts.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <div id="title">슈슉 생성기 @ienground</div>
+    <div class="input">
+        <ul>
+            <li><input type="text" id="word1" placeholder="슈슉"></li>
+            <li><input type="text" id="word2" placeholder="시발럼아"></li>
+            <li><input type="text" id="word3" placeholder="시벌람아 (선택)"> <input type="checkbox" id="word3_check" checked></li>
+            <li><button id="make" onclick="makeSentence()">생성하기</button></li>
+        </ul>
+        <div id="result">생성하기를 클릭하세요</div>
+
+        <script>
+            let word3_check = document.getElementById("word3_check");
+            word3_check.addEventListener('change', function() {
+                document.getElementById("word3").disabled = !this.checked;
+            })
+        </script>
+    </div>
+</body>
+</html>
