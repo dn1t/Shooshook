@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
 
-    <script lang="text/javascript" src="scripts/scripts.js"></script>
-    <title>Title</title>
+    <script lang="text/javascript" src="scripts/scripts.js" type="module"></script>
+
+    <title>슈슉 생성기</title>
 </head>
 <body>
     <div id="title">슈슉 생성기 @ienground</div>
     <div class="input">
         <ul>
-            <li><input type="text" id="word1" placeholder="슈슉"></li>
-            <li><input type="text" id="word2" placeholder="시발럼아"></li>
-            <li><input type="text" id="word3" placeholder="시벌람아 (선택)"> <input type="checkbox" id="word3_check" checked></li>
+            <li><input type="text" id="word1" placeholder="슈슉 (2글자)"></li>
+            <li><input type="text" id="word2" placeholder="시발럼아 (4글자)"></li>
+            <li><input type="text" id="word3" placeholder="시벌람아 (선택, 4글자)"> <input type="checkbox" id="word3_check" checked></li>
             <li><button id="make" onclick="makeSentence()">생성하기</button></li>
         </ul>
         <div id="result">생성하기를 클릭하세요</div>

@@ -49,4 +49,6 @@ function makeSentence() {
     result += word1 + ". " + word2.substr(0, 2) + ". ";
 
     result_element.innerHTML = result;
+
+    return result;
 }
