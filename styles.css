@@ -15,6 +15,11 @@ body {
   height: 100vh;
 }
 
+a {
+  color: #007eff;
+  text-decoration: none;
+}
+
 main {
   width: max-content;
   max-width: 100%;
