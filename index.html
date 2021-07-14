@@ -1,30 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.css">
-
-    <script lang="text/javascript" src="scripts/scripts.js"></script>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>슈슉 생성기</title>
-</head>
-<body>
-    <div id="title">슈슉 생성기 @ienground</div>
-    <div class="input">
-        <ul>
-            <li><input type="text" id="word1" placeholder="슈슉 (2글자)"></li>
-            <li><input type="text" id="word2" placeholder="시발럼아 (4글자)"></li>
-            <li><input type="text" id="word3" placeholder="시벌람아 (선택, 4글자)"> <input type="checkbox" id="word3_check" checked></li>
-            <li><button id="make" onclick="makeSentence()">생성하기</button></li>
-        </ul>
-        <div id="result">생성하기를 클릭하세요</div>
-
-        <script>
-            let word3_check = document.getElementById("word3_check");
-            word3_check.addEventListener('change', function() {
-                document.getElementById("word3").disabled = !this.checked;
-            })
-        </script>
-    </div>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 class="title">슈슉 생성기</h1>
+      <p class="user">@ienground, @thoratica</p>
+      <form>
+        <label class="item">
+          단어 1
+          <input type="text" class="two" placeholder="슈슉 (2글자)" minlength="2" maxlength="2" />
+        </label>
+        <label class="item">
+          단어 2
+          <input type="text" class="four" placeholder="시발럼아 (4글자)" minlength="4" maxlength="4" />
+        </label>
+        <label class="item">
+          단어 3 (선택)
+          <input type="text" class="four" placeholder="시벌람아 (4글자)" minlength="4" maxlength="4" />
+        </label>
+      </form>
+      <label>
+        결과
+        <textarea id="result"></textarea>
+      </label>
+      <button id="copy">복사하기</button>
+    </main>
+    <script src="scripts/scripts.js"></script>
+  </body>
 </html>

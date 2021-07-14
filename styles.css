@@ -1,0 +1,91 @@
+* {
+  font-family: 'Montserrat', 'Noto Sans KR', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url(https://i.ibb.co/wQD6hN1/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  width: max-content;
+  max-width: 48rem;
+  background-color: #ffffff41;
+  backdrop-filter: blur(1rem);
+  padding: 3rem 5rem;
+  border-radius: 1rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.user {
+  margin: 0 0 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+}
+
+input,
+textarea,
+button {
+  border: 0;
+  padding: 0.5rem 1rem;
+  margin: 0.1rem;
+  background-color: #ffffff20;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  resize: none;
+}
+
+input.two {
+  width: 7.1rem;
+}
+
+input.four {
+  width: 9rem;
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  background-color: #ffffff41;
+  outline: none;
+}
+
+input[type='submit'] {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+#result {
+  height: 7rem;
+}
+
+#copy {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
