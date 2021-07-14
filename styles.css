@@ -17,7 +17,7 @@ body {
 
 main {
   width: max-content;
-  max-width: 48rem;
+  max-width: 100%;
   background-color: #ffffff41;
   backdrop-filter: blur(1rem);
   padding: 3rem 5rem;
@@ -88,4 +88,16 @@ input[type='submit'] {
 #copy {
   font-size: 0.9rem;
   cursor: pointer;
+}
+
+@media (max-width: 570px) {
+  form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  main {
+    padding: 1rem 1.5rem;
+  }
 }
